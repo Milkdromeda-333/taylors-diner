@@ -1,0 +1,206 @@
+:root {
+    --brown: #ce9964ff;
+    --orange: #fed27aff;
+    /* ^words^ */
+    --cream: #faecc6ff;
+    /* ^secondary color, nav^ */
+    --light-green: #d9e0a3ff;
+    --green: #858f66;
+    /* ^background color^ */
+    --dark-brown: #7b5e41;
+    --decor: 'Cookie', cursive;
+    --text: 'Comfortaa', sans-serif;
+    --text-bold: 700;
+    --text-italic: italic;
+}
+
+/* Universal */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--green);
+    font-family: var(--text);
+    color: var(--cream);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 15px;
+    border-radius: 3px;
+    font-family: var(--text);
+    border: none;
+    background-color: var(--cream);
+    color: var(--brown);
+}
+
+button:hover {
+    background-color: var(--brown);
+    color: var(--cream);
+}
+
+/* Nav */
+nav {
+    background-color: var(--cream);
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li a,
+nav li {
+    padding: 15px;
+}
+
+ul a {
+    color: var(--brown);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: var(--decor);
+    padding: 15px;
+}
+
+nav li a:hover {
+    background-color: var(--brown);
+    color: var(--cream);
+}
+
+nav ul li .logo:hover {
+    background-color: none;
+}
+
+/* Hero */
+.hero {
+    padding-top: 60px;
+    background-image: url(./tumblr_p5npaggnBt1v656bko1_1280.png);
+    background-attachment: fixed;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    text-shadow: 2px 2px 3px var(--cream);
+}
+
+.hero span {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 3px var(--cream);
+}
+
+.hero h1 {
+    font-family: var(--decor);
+    font-size: 120px;
+    color: var(--green);
+}
+
+.hero * {
+    margin: 10px;
+}
+
+.hero-buttons {
+    height: 50px;
+}
+
+/* section one */
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    color: var(--cream);
+}
+
+.text h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight: var(--text-bold);
+}
+
+.intro img {
+    object-fit: cover;
+    height: 100%;
+    width: 500px;
+    object-position: 100% 100%;
+    border-radius: 20px;
+}
+
+/* reserve a table */
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+form h2 {
+    text-decoration: underline;
+}
+
+form img {
+    object-fit: cover;
+    object-position: 50% 70%;
+    height: 400px;
+    width: 50%;
+    border-radius: 20px;
+
+}
+
+.reserve-a-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form input {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+form button {
+    width: 50%;
+    margin-top: 5px;
+    background-color: var(--brown);
+    color: var(--cream);
+}
+
+form button:hover {
+    color: var(--brown);
+    background-color: var(--cream);
+}
+
+.reserve-a-table div {
+    margin: 10px;
+}
+
+.reserve-a-table p {
+    padding: 30px;
+}
