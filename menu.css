@@ -1,0 +1,81 @@
+.hero h2 {
+    font-size: 80px;
+    font-family: var(--decor);
+    margin: 10px;
+}
+
+.hero {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+h2 {
+    font-family: var(--decor);
+    font-size: 70px;
+    color: var(--brown);
+    text-shadow: 2px 2px 3px var(--cream);
+    justify-self: center;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: var(--text-bold);
+    font-style: italic;
+    margin-top: 20px;
+}
+
+main span::before {
+    content: "$";
+}
+
+main * {
+    padding: 5px;
+}
+
+/* APPETIZERS */
+#appetizers,
+#vegan-options,
+#alcaholic-drinks {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+#salads {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+#deserts {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#appetizers h2,
+#vegan-options h2,
+#alcaholic-drinks h2,
+#salads h2,
+#deserts h2 {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+#alcaholic-drinks p {
+    grid-area: 2 / 1 / span 1 / span 2;
+    text-align: center;
+}
+
+#alcaholic-drinks>div p {
+    text-align: unset;
+}
