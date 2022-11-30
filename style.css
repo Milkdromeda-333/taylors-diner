@@ -98,7 +98,7 @@ nav ul li .logo:hover {
 /* Hero */
 .hero {
     padding-top: 60px;
-    background-image: url(./tumblr_p5npaggnBt1v656bko1_1280.png);
+    background-image: url("./tumblr_p5npaggnBt1v656bko1_1280.jpg");
     background-attachment: fixed;
     height: 100vh;
     display: flex;
